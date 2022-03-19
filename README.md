@@ -17,6 +17,15 @@ yarn dev
 yarn build
 ```
 
+## To-do
+
+- [ ] Supabase
+  - [ ] Integration
+  - [ ] Authentication
+  - [ ] Data structure
+- [ ] Vercel adapter
+- [ ] Mockups
+
 ## Stack
 
 - [SvelteKit](https://kit.svelte.dev/)
