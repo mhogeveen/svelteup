@@ -12,15 +12,12 @@ yarn
 
 # start development server and open in browser
 yarn dev
-```
 
-## Building
-
-To create a production version:
-
-```bash
+# build production version
 yarn build
-
-# to preview the production build
-yarn preview
 ```
+
+## Stack
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
