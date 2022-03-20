@@ -20,7 +20,7 @@ yarn build
 ## To-do
 
 - [ ] Supabase
-  - [ ] Integration
+  - [x] Integration
   - [ ] Authentication
   - [ ] Data structure
 - [ ] Vercel adapter
