@@ -25,7 +25,7 @@
         last_name = data.last_name
       }
     } catch (error) {
-      alert(error.message)
+      console.error(error)
     } finally {
       loading = false
     }
@@ -44,12 +44,12 @@
       }
 
       let { error } = await supabase.from('profiles').upsert(updates, {
-        returning: 'minimal', // Don't return the value after inserting
+        returning: 'minimal',
       })
 
       if (error) throw error
     } catch (error) {
-      alert(error.message)
+      console.error(error)
     } finally {
       loading = false
     }
