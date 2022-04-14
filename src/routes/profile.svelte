@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { supabase } from '$lib/supabase/client';
-  import userSession from '$lib/stores/userSession';
+  import { userSession } from '$lib/stores/userSession';
 
   let loading = true
   let first_name = null
