@@ -1,6 +1,8 @@
 <script lang="ts">
   import Spaces from '$lib/components/Spaces.svelte';
   import Space from '$lib/components/Space.svelte';
+  import { hotkey } from '$lib/hooks';
+  import { favoritesActive } from '$lib/stores';
   import "../app.css";
 </script>
 
@@ -8,7 +10,7 @@
   <Spaces />
 
   <section class="grow flex flex-col">
-    <nav class="h-10 w-full flex justify-center items-center bg-slate-400">Favorites</nav>
+    <nav use:hotkey={{meta: true, key: 'i', callback: favoritesActive.toggle}} class="h-10 w-full justify-center items-center bg-slate-400" class:flex={$favoritesActive} class:hidden={!$favoritesActive}>Favorites</nav>
     <div class="flex grow">
       <Space />
       <div class="grow flex justify-center items-center">
