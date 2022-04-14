@@ -30,3 +30,8 @@ yarn build
 
 - [SvelteKit](https://kit.svelte.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+
+## Hotkeys
+
+- CMD + o = Toggle space panel
+- CMD + I = Toggle favorites bar
