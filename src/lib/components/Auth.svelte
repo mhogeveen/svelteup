@@ -1,6 +1,6 @@
 <script lang="ts">
   import { supabase } from "$lib/supabase/client";
-  import userSession from "$lib/stores/userSession";
+  import { userSession } from "$lib/stores";
 
   const signIn = async () => {
     const { user, session, error } = await supabase.auth.signIn({
