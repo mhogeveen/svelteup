@@ -12,3 +12,5 @@ const createActive = (defaultValue: boolean = true) => {
 export const spaceActive = createActive();
 
 export const favoritesActive = createActive(false);
+
+export const darkMode = createActive();
