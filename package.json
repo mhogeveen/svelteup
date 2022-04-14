@@ -30,6 +30,7 @@
 		"prettier-plugin-svelte": "^2.5.0",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.2.6",
+		"svelte-fa": "^2.4.0",
 		"svelte-preprocess": "^4.10.1",
 		"tailwindcss": "^3.0.23",
 		"tslib": "^2.3.1",
@@ -37,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fortawesome/pro-light-svg-icons": "^6.1.1",
 		"@supabase/supabase-js": "^1.31.1"
 	}
 }
