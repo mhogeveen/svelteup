@@ -8,8 +8,13 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
-	}
+		adapter: adapter(),
+		vite: {
+			ssr: {
+				noExternal: ['@fortawesome/*'],
+			},
+		},
+	},
 };
 
 export default config;
