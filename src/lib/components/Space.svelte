@@ -1,8 +1,9 @@
 <script lang="ts">
   import Fa from 'svelte-fa';
-  import { faChevronRight, faChevronLeft } from '@fortawesome/pro-light-svg-icons';
+  import * as icons from '@fortawesome/pro-light-svg-icons';
   import { hotkey } from '$lib/hooks';
   import { spaceActive } from '$lib/stores';
+  const { faChevronRight, faChevronLeft } = icons;
 </script>
 
 <aside class="h-full w-80 bg-slate-300 justify-center items-center" class:flex={$spaceActive} class:hidden={!$spaceActive}>
